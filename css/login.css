@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/* 상단 서브 nav 시작 */
+#login_page{
+    padding: 120px 0 70px;
+}
+#login_page .sub_nav_top{
+    background: url(../images/sub_top_06.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 286px;
+    position: relative;
+}
+#login_page .sub_nav_bottom ul{
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+}
+/* 상단 서브 nav 끝 */
+
+/* 내용 시작 */
+.login_form_wrap{
+    font-weight: bold;
+    text-align: center;
+    width: 90%;
+    padding: 40px;
+    margin: 0 5% 30px;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    border-top: 2px solid #000;
+}
+.login_form_text p:nth-child(1){
+    font-size: 27px;
+    padding-bottom: 20px;
+}
+.login_form_text p:nth-child(2){
+    color: #5d5d5d;
+    letter-spacing: -2px;
+    padding-bottom: 30px;
+}
+.login_form_content > p{
+    padding: 3px 0;
+}
+.login_form_content > p label{
+    font-size: 14px;
+    width: 15%;
+    display: inline-block;
+}
+.login_form_content > p input{
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+/* 폼 버튼 */
+.login_form_btn button{
+    color: #fff;
+    font-size: 19px;
+    padding: 10px 50px;
+    margin: 20px 0 0;
+    background: #333;
+}
+
+/* 회원가입, 아이디찾기, 비밀번호찾기 */
+.user_info_find{
+    width: 70%;
+    padding: 20px 0;
+    margin: 20px auto 0;
+}
+.user_info_find a{
+    color: #666;
+    font-size: 13px;
+    letter-spacing: -1px;
+    width: 30%;
+    padding: 7px 10px;
+    border: 1px solid #bbb;
+    display: inline-block;
+
+}
+
+
+/* 반응형 */
+@media only screen and (max-width: 768px){
+    .login_form_content > p label{
+        font-size: 14px;
+        width: 15%;
+        display: none;
+    }
+    .login_form_content > p input{
+        width: 80%;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    /* 폼 버튼 */
+    .login_form_btn button{
+        color: #fff;
+        font-size: 16px;
+        padding: 15px 30px;
+        margin: 10px auto 0;
+        background: #333;
+        width: 80%;
+        border-radius: 3px;
+    }
+    /* 회원가입, 아이디찾기, 비밀번호찾기 */
+    .user_info_find{
+        width: 80%;
+        padding: 0px 0;
+        margin: 40px auto 0;
+    }
+    .user_info_find a{
+        color: #666;
+        font-size: 13px;
+        letter-spacing: -1px;
+        width: 100%;
+        padding: 7px 10px;
+        border: 1px solid #bbb;
+        display: inline-block;
+        margin: 5px 0;
+        border-radius: 3px;
+    }
+}

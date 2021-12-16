@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+
+::placeholder{
+    color: #d7ba9a;
+    padding-left: 2px;
+}
+
+#join_page{
+    padding-top: 120px;
+}
+
+/* 상단 서브 nav 시작 */
+#join_page .sub_nav_top{
+    background: url(../images/sub_top_06.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 286px;
+    position: relative;
+}
+#join_page .sub_nav_bottom ul{
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+}
+/* 상단 서브 nav 끝 */
+
+/* 내용 시작 */
+.join_form_text{
+    padding: 25px;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+}
+.join_form_text strong{
+    color: #252122;
+    font-size: 18px;
+    font-weight: bold;
+}
+.join_form_text p{
+    color: #5d5d5d;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 22px;
+}
+
+.join_form fieldset legend{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 40px 0 5px;
+    display: block;
+}
+.join_form_list tr{
+    border-bottom: 1px solid #e5e5e5;
+}
+.join_form_list tr td:nth-child(1){
+    font-weight: bold;
+    padding: 10px;
+    background: #f7f7f7;
+}
+.join_form_list tr td:nth-child(2) select, 
+.join_form_list tr td:nth-child(2) input,
+.join_form_list tr td:nth-child(2) textarea{
+    padding: 8px 6px;
+    margin: 8px;
+    vertical-align: middle;
+    border: 1px solid #b3b2b2;
+}
+/* 아이디 중복확인 */
+.join_form_list .join_id_check{
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: 100;
+    letter-spacing: -0.5px;
+    padding: 6px 5px;
+    vertical-align: middle;
+    background: #d7ba9a;
+    border-radius: 3px;
+}
+.join_form_list .join_id_check i{
+    margin-left: 4px;
+    color: #99856f;
+}
+/* 아이디, 비밀번호 추가 설명 */
+.join_form_list td span{
+    color: #5d5d5d;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.8px;
+    vertical-align: middle;
+}
+.join_form_list tr td:nth-child(2) textarea{
+    width: 90%;
+    height: 150px;
+    resize: none;
+}
+
+/* 폼 버튼 */
+.join_form_btn{
+    padding: 55px 0 80px;
+    text-align: center;
+}
+.join_form_btn input{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 8px 25px;
+    margin: 0 8px;
+    border-radius: 4px;
+}
+.join_form_btn input:nth-child(1){
+    background: #333;
+    opacity: 0.8;
+}
+.join_form_btn input:nth-child(2){
+    background: #e6a25b;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.join_form_btn input:nth-child(1):hover, 
+.join_form_btn input:nth-child(2):hover{
+    opacity: 1;
+}
+
+/* 반응형 */
+@media only screen and (max-width: 950px){
+    /* 아이디, 비밀번호 추가 설명 */
+    .join_form_list td span{
+        color: #5d5d5d;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: -0.8px;
+        display: block;
+        margin-left: 8px;
+        margin-bottom: 5px;
+    }
+    /* 비밀번호 확인시 질문 select 박스 */
+    .join_form_list tr td:nth-child(2) select.join_pw_question{
+        padding: 4px;
+        margin: 5px;
+        vertical-align: middle;
+        border: 1px solid #b3b2b2;
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 500px){
+    /* 아이디 중복확인 */
+    .join_form_list .join_id_check{
+        color: #fff;
+        font-size: 0.8em;
+        font-weight: 100;
+        letter-spacing: -0.5px;
+        padding: 6px 5px;
+        /* vertical-align: middle; */
+        background: #d7ba9a;
+        border-radius: 3px;
+        display: block;
+        width: 120px;
+        text-align: center;
+        margin-left: 8px;
+        margin-bottom: 5px;
+    }
+}

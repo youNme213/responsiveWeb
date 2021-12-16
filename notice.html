@@ -1,0 +1,120 @@
+<div id="container">
+    <!-- 고객센터 > 공지사항 페이지 -->
+
+    <div id="notice_pg">
+
+        <!-- 상단 서브 nav -->
+        <div class="sub_nav_wrap">
+            <div class="sub_nav">
+
+                <div class="sub_nav_top">
+                    <div class="sub_nav_title">
+                        <h2>CUSTOMER</h2>
+                        <p>창의적이고 감각적인 디자인으로 보답하는 비지니스 파트너가 되겠습니다.</p>
+                    </div>
+                </div>
+
+                <div class="sub_nav_bottom">
+                    <div class="row">
+                        <ul>
+                            <li><a href="customer_qna.html">고객상담</a></li>
+                            <li><a href="qna_notice.html">문의게시판</a></li>
+                            <li class="on"><a href="notice.html">공지사항</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="selected_menu">
+                    <h2>공지사항</h2>
+                    <p><i class="fas fa-home"></i> &gt; COSTOMER &gt; 공지사항</p>
+                </div>
+            </div>
+        </div>
+        <!-- //상단 서브 nav -->
+
+        <div class="notice_wrap">
+            <div class="notice row">
+
+                <!-- 공지사항 리스트 -->
+                <div class="notice_table">
+                    <table>
+
+                        <caption>공지사항</caption>
+
+                        <colgroup>
+                            <col style="width: 15%;">
+                            <col style="width: auto;">
+                            <col style="width: 20%;">
+                        </colgroup>
+
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>제목</th>
+                                <th>작성일자</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>5</td>
+                                <td><a href="#">공지사항 테스트 글 입니다.</a></td>
+                                <td>2020.09.18</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><a href="#">공지사항 테스트 글 입니다.</a></td>
+                                <td>2020.09.17</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><a href="#">공지사항 테스트 글 입니다.</a></td>
+                                <td>2020.09.17</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><a href="#">공지사항 테스트 글 입니다.</a></td>
+                                <td>2020.09.16</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><a href="#">공지사항 테스트 글 입니다.</a></td>
+                                <td>2020.09.15</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+                <!-- 공지사항 검색 -->
+                <div class="notice_search_wrap">
+                    <select name="notice_search" id="">
+                        <option value="notice_search_title">제목</option>
+                        <option value="notice_search_content">내용</option>
+                        <option value="notice_search_writer">작성자</option>
+                    </select>
+                    <input type="text" name="notice_search_keyword" id="">
+                    <input type="submit" value="검색">
+                </div>
+
+                <!-- 공지사항 페이지 번호 -->
+                <div class="notice_num">
+                    <span><i class="fas fa-chevron-left"></i></span>
+                    <a href="#" class="on">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <span><i class="fas fa-chevron-right"></i></span>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="js/sub_nav.js"></script>

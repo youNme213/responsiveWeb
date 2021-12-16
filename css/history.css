@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* 회사소개 > 회사연혁 페이지 */
+
+
+#history_pg{
+    padding-top: 120px;
+    text-align: center;
+}
+/* 상단 서브 nav 시작 */
+#history_pg .sub_nav_top{
+    background: url(../images/sub_top_01.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 286px;
+    position: relative;
+}
+#history_pg .sub_nav_bottom ul{
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+}
+/* 상단 서브 nav 끝 */
+
+/* 내용 시작 */

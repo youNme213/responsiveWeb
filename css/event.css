@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+#event_pg{
+    padding-top: 120px;
+}
+
+/* 상단 서브 nav 시작 */
+#event_pg .sub_nav_top{
+    background: url(../images/sub_top_05.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 286px;
+    position: relative;
+}
+#event_pg .sub_nav_bottom ul{
+    margin: 0 auto;
+    width: 40%;
+    display: flex;
+}
+/* 상단 서브 nav 끝 */
+
+/* 내용 시작 */
+.event_list > li{
+    width: 100%;
+    padding: 2% 0;
+    border-bottom: 1px solid #ddd;
+}
+.event_list > li:first-child{
+    padding-top: 0;
+}
+.event_list .event_img{
+    width: 30%;
+    float: left;
+}
+.event_list .event_img img{
+    width: 100%;
+}
+.event_list .event_text{
+    width: calc(70% - 15px);
+    float: left;
+    color: #666;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 15px;
+}
+.event_list .event_text > li{
+    margin: 10px 0;
+}
+.event_text span{
+    vertical-align: middle;
+}
+.event_text h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    display: inline-block;
+    vertical-align: middle;
+}
+.event_text .text_bold{
+    display: inline-block;
+    color: #000;
+    margin: 0 10px;
+}
+
+/* 이벤트 검색 */
+.event_search_wrap{
+    margin: 55px 0 30px;
+}
+.event_search_wrap select{
+    height: 30px;
+    border: 1px solid #ddd;
+}
+.event_search_wrap input{
+    height: 30px;
+    vertical-align: middle;
+}
+.event_search_wrap input[type=text]{
+    text-indent: 1em;
+    border: 1px solid #ddd;
+}
+.event_search_wrap input[type=submit]{
+    width: 50px;
+    color: #fff;
+    background: #333;
+    opacity: 0.7;
+    border-radius: 3px;
+}
+.event_search_wrap input[type=submit]:hover{
+    opacity: 1;
+}
+
+/* 이벤트 페이지 번호 */
+.event_num{
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 24px;
+}
+.event_num span{
+    padding: 5px 8px;
+    margin: 0 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+.event_num a{
+    padding: 5px 8px;
+    display: inline-block;
+    color: #aaa;
+}
+.event_num a:hover{
+    color: #000;
+}
+/* 이벤트 페이지 번호 클릭시 */
+.event_num a.on{
+    color: #000;
+}

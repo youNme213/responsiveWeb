@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, 
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    vertical-align: middle;
+    border: none;
+}
+
+table{
+    /* 칸 안의 내용에 따라 표의 구조가 변형되지 않도록 */
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+button, 
+input{
+    border: none;
+}
+
+button[type=submit], 
+input[type=submit],
+button[type=button], 
+input[type=button] {
+    cursor: pointer;
+}
+
+fieldset{
+    border: none;
+}
+
+legend, 
+caption{
+    display: none;
+}
+
+article, 
+aside, 
+details, 
+figcaption, 
+figure, 
+footer, 
+header, 
+hgroup, 
+menu, 
+nav, 
+section{
+    display: block;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+pre, 
+textarea{
+    font-size: 100%;
+}
+
+address, 
+em{
+    font-style: normal;
+}
+
+strong, 
+th{
+    font-weight: normal;
+}
+
+/* float 때문에 무너진 부모요소 살릴 때 */
+.cf:before, 
+.cf:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* 박스 안에 넘치는 글자를 말줄임표로 표시 */
+.ellipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 본문바로가기 스타일 */
+.skip > a{ 
+    display:block;
+    background:#000; 
+    color:#fff;
+    text-align:center; 
+    width: 1px;  
+    height: 1px;
+    overflow:hidden; 
+    position:absolute; 
+    top:-100px 
+}
+.skip a:focus{ 
+    width: 100%;  
+    height:auto;
+    padding:10px 0px; 
+    position:fixed;
+    top:0px; 
+    z-index:9999999; 
+}
+
+.row{
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 15px;
+    /* background: #f00; */
+}
+
+/* IR 효과 */  
+.blind{
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+}

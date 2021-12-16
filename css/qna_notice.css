@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+#qna_notice_pg{
+    padding-top: 120px;
+}
+
+/* 상단 서브 nav 시작 */
+#qna_notice_pg .sub_nav_top{
+    background: url(../images/sub_top_04.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 286px;
+    position: relative;
+}
+#qna_notice_pg .sub_nav_bottom ul{
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+}
+/* 상단 서브 nav 끝 */
+
+/* 내용시작 */
+/* 문의 내용 리스트 */
+.qna_notice_table table{
+    font-size: 15px;
+    text-align: center;
+}
+.qna_notice_table thead tr{
+    background: #f2f2f2;
+    border-top: 1px solid #000;
+}
+.qna_notice_table tr th, 
+.qna_notice_table tr td{
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 15px;
+}
+.qna_notice_table tr td:nth-child(2){
+    text-align: left;
+    padding: 1em;
+    cursor: pointer;
+}
+.qna_notice_table tr td:nth-child(2):hover{
+    color: #ff5500;
+    font-weight: bold;
+}
+
+/* 문의 내용 검색 */
+.qna_notice_search_wrap{
+    margin: 55px 0 30px;
+}
+.qna_notice_search_wrap select{
+    height: 30px;
+    border: 1px solid #ddd;
+}
+.qna_notice_search_wrap input{
+    height: 30px;
+    vertical-align: middle;
+}
+.qna_notice_search_wrap input[type=text]{
+    text-indent: 1em;
+    border: 1px solid #ddd;
+}
+.qna_notice_search_wrap input[type=submit]{
+    color: #fff;
+    width: 50px;
+    background: #333;
+    opacity: 0.7;
+    border-radius: 3px;
+}
+.qna_notice_search_wrap input[type=submit]:hover{
+    opacity: 1;
+}
+
+/* 게시판 페이지 번호 */
+.qna_notice_num{
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 24px;
+}
+.qna_notice_num span{
+    padding: 5px 8px;
+    margin: 0 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+.qna_notice_num a{
+    padding: 5px 8px;
+    display: inline-block;
+    color: #aaa;
+}
+.qna_notice_num a:hover{
+    color: #000;
+}
+/* 게시판 페이지 번호 클릭시 */
+.qna_notice_num a.on{
+    color: #000;
+}

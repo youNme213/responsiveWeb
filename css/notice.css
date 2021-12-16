@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+#notice_pg{
+    padding-top: 120px;
+}
+
+/* 상단 서브 nav 시작 */
+#notice_pg .sub_nav_top{
+    background: url(../images/sub_top_04.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 286px;
+    position: relative;
+}
+#notice_pg .sub_nav_bottom ul{
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+}
+/* 상단 서브 nav 끝 */
+
+/* 내용시작 */
+/* 공지사항 리스트 */
+.notice_table table{
+    font-size: 15px;
+    text-align: center;
+}
+.notice_table thead tr{
+    background: #f2f2f2;
+    border-top: 1px solid #000;
+}
+.notice_table tr th, 
+.notice_table tr td{
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 15px;
+}
+.notice_table tr td:nth-child(2){
+    text-align: left;
+    padding: 1em;
+    cursor: pointer;
+}
+.notice_table tr td:nth-child(2):hover{
+    color: #ff5500;
+    font-weight: bold;
+}
+
+/* 공지사항 검색 */
+.notice_search_wrap{
+    margin: 55px 0 30px;
+}
+.notice_search_wrap select{
+    height: 30px;
+    border: 1px solid #ddd;
+}
+.notice_search_wrap input{
+    height: 30px;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+}
+.notice_search_wrap input[type=text]{
+    text-indent: 1em;
+}
+.notice_search_wrap input[type=submit]{
+    width: 50px;
+    color: #fff;
+    background: #333;
+    opacity: 0.7;
+    border-radius: 3px;
+}
+.notice_search_wrap input[type=submit]:hover{
+    opacity: 1;
+}
+
+/* 공지사항 페이지 번호 */
+.notice_num{
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 24px;
+}
+.notice_num span{
+    padding: 5px 8px;
+    margin: 0 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+.notice_num a{
+    padding: 5px 8px;
+    display: inline-block;
+    color: #aaa;
+}
+.notice_num a:hover{
+    color: #000;
+}
+/* 공지사항 페이지 번호 클릭시 */
+.notice_num a.on{
+    color: #000;
+}

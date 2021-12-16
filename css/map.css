@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+#directions_pg{
+    padding-top: 120px;
+}
+/* 상단 서브 nav 시작 */
+#directions_pg .sub_nav_top{
+    background: url(../images/sub_top_01.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 286px;
+    position: relative;
+}
+#directions_pg .sub_nav_bottom ul{
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+}
+/* 상단 서브 nav 끝 */
+
+/* 내용시작 */
+.company_info table{
+    font-weight: 600;
+    color: #5d5d5d;
+    margin: 30px 0 80px;
+}
+.company_info table tr{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.company_info table tr td{
+    padding: 25px 30px;
+}
+.company_info table tr td:first-child{
+    background: #f5f5f5;
+    width: 20%;
+}
+.company_info table tr td:first-child > i{
+    color: #001f60;
+    margin-right: 15px;
+    font-size: 20px;
+}

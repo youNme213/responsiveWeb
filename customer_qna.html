@@ -1,0 +1,166 @@
+<div id="container">
+    <!-- 고객센터 > 고객상담 페이지 -->
+
+    <div id="customer_qna_pg">
+        
+        <!-- 상단 서브 nav -->
+        <div class="sub_nav_wrap">
+            <div class="sub_nav">
+
+                <div class="sub_nav_top">
+                    <div class="sub_nav_title">
+                        <h2>CUSTOMER</h2>
+                        <p>창의적이고 감각적인 디자인으로 보답하는 비지니스 파트너가 되겠습니다.</p>
+                    </div>
+                </div>
+
+                <div class="sub_nav_bottom">
+                    <div class="row">
+                        <ul>
+                            <li class="on"><a href="customer_qna.html">고객상담</a></li>
+                            <li><a href="qna_notice.html">문의게시판</a></li>
+                            <li><a href="notice.html">공지사항</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="selected_menu">
+                    <h2>고객상담</h2>
+                    <p><i class="fas fa-home"></i> &gt; COSTOMER &gt; 고객상담</p>
+                </div>
+            </div>
+        </div>
+        <!-- //상단 서브 nav -->
+
+        <div class="customer_qna_wrap row">
+            <form class="customer_qna" action="#" method="POST">
+
+                <fieldset>
+                    
+                    <legend>기본정보</legend>
+
+                    <table class="customer_qna_list">
+
+                        <colgroup>
+                            <col width="25%">
+                            <col width="75%">
+                        </colgroup>
+                        
+                        <!-- 구분 -->
+                        <tr style="border-top: 2px solid #000">
+                            <td>
+                                <label for="customer_qna_category">구분</label>
+                            </td>
+                            <td>
+                                <select name="" id="customer_qna_category">
+                                    <option value="customer_qna_category0">카테고리 선택</option>
+                                    <option value="customer_qna_category1">카테고리1</option>
+                                    <option value="customer_qna_category2">카테고리2</option>
+                                    <option value="customer_qna_category3">카테고리</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <!-- 이름 -->
+                        <tr>
+                            <td>
+                                <label for="customer_name">이름</label>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="customer_name">
+                            </td>
+                        </tr>
+
+                        <!-- 전화번호 -->
+                        <tr>
+                            <td>
+                                <label for="customer_tel">전화번호</label>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="customer_tel">
+                                <span>-</span>
+                                <input type="text" name="" id="customer_tel">
+                                <span>-</span>
+                                <input type="text" name="" id="customer_tel">
+                            </td>
+                        </tr>
+
+                        <!-- 이메일 -->
+                        <tr>
+                            <td>
+                                <label for="customer_email">이메일</label>
+                            </td>
+                            <td>
+                                <input id="customer_email" type="text">
+                                <span>@</span>
+                                <select title="select">
+                                    <option value="selftext">직접입력</option>
+                                    <option value="naver.com">naver.com</option>
+                                    <option value="hanmail.net">hanmail.net</option>
+                                    <option value="hotmail.com">hotmail.com</option>
+                                    <option value="nate.com">nate.com</option>
+                                    <option value="yahoo.co.kr">yahoo.co.kr</option>
+                                    <option value="empas.com">empas.com</option>
+                                    <option value="dreamwiz.com">dreamwiz.com</option>
+                                    <option value="freechal.com">freechal.com</option>
+                                    <option value="lycos.com">lycos.com</option>
+                                    <option value="korea.com">korea.com</option>
+                                    <option value="gmail.com">gmail.com</option>
+                                    <option value="hanmir.com">hanmir.com</option>
+                                    <option value="paran.com">paran.com</option>
+                                </select>
+                                <input class="self" type="text" placeholder="입력창">
+                            </td>
+                        </tr>
+
+                        <!-- 주소 -->
+                        <tr>
+                            <td>
+                                <label for="customer_address">주소</label>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="customer_address">
+                                <input type="text" name="" id="customer_address" placeholder="상세주소를 입력해주세요">
+                            </td>
+                        </tr>
+
+                        <!-- 제목 -->
+                        <tr>
+                            <td>
+                                <label for="customer_qna_title">제목</label>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="customer_qna_title">
+                            </td>
+                        </tr>
+
+                        <!-- 내용 -->
+                        <tr>
+                            <td>
+                                <label for="customer_qna_content">내용</label>
+                            </td>
+                            <td>
+                                <textarea name="" id="customer_qna_content"></textarea>
+                            </td>
+                        </tr>
+                        
+                    </table>
+
+                </fieldset>
+
+                <!-- 폼 버튼 -->
+                <div class="customer_qna_btn">
+                    <input type="submit" value="확인">
+                    <input type="reset" value="취소">
+                </div>
+
+            </form>
+        </div>
+        
+    </div>
+</div>
+
+<script src="js/sub_nav.js"></script>
