@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/common.js" defer></script>
     <!--[if lt IE 9]>
@@ -18,7 +19,7 @@
     <!-- 로딩 표시 -->
     <div class="loadingAni">
         <img src="images/loading.gif" alt="로딩중">
-	</div>
+    </div>
 
     <!-- 본문 바로가기 -->
     <div class="skip">
@@ -186,6 +187,25 @@
     <!-- 맨 위로 가기 버튼 -->
     <div class="go_top">
         <a href="#"><i class="fas fa-angle-up"><br>TOP</i></a>
+    </div>
+
+    <!-- 팝업창 -->
+    <div id="popup_wrap">
+        <div class="popup">
+            <div class="popup_text">
+                <p>본 사이트는 포트폴리오용으로 제작되었습니다.</p>
+                <p>저작권은 원저작자에게 있습니다.</p>
+                <p>본 사이트는 Chrome에 최적화되어 있으며,
+                    <br>
+                    HTML5, CSS3, javaScript &amp; jQuery로 제작되었습니다.
+                </p>
+            </div>
+            <div class="popup_btn cf">
+                <input type="checkbox" name="" id="">
+                <span>오늘 하루 이 창을 열지 않음</span> 
+                <button type="button">close</button>
+            </div>
+        </div>
     </div>
         
 </body>

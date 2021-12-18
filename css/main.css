@@ -277,6 +277,7 @@ body{
     height: 200px;
     position: relative;
     opacity: 1;
+    cursor: pointer;
 }
 .product img:hover{
     opacity: 0.6;

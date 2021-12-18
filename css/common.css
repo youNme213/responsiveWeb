@@ -28,8 +28,8 @@
     background: #fff;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
     position: fixed; 
-    top:0; 
-    left:0; 
+    top: 0; 
+    left: 0; 
     z-index: 100;
 }
 
@@ -216,3 +216,67 @@
     border-radius: 5px;
 }
 /* 맨 위로 가기 버튼 끝 */
+
+/* 팝업창 시작 */
+#popup_wrap{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 999999;
+    display: none;
+}
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f2f2f2;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    overflow: hidden;
+}
+.popup .popup_text{
+    padding: 50px 70px;
+}
+.popup .popup_text p:nth-child(1){
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+}
+.popup .popup_text p:nth-child(2){
+    font-size: 26px;
+    font-weight: bold;
+    color: #00529b;
+    padding: 10px 0 40px;
+}
+.popup .popup_text p:nth-child(3){
+    font-size: 16px;
+    color: #666;
+}
+.popup .popup_btn{
+    padding: 10px 70px;
+    background: #00529b;
+}
+.popup .popup_btn input{
+    vertical-align: middle;
+}
+.popup .popup_btn span{
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: -1px;
+    vertical-align: middle;
+}
+.popup .popup_btn button{
+    font-size: 16px;
+    color: #f2f2f2;
+    background: none;
+    padding: 6px 12px;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    float: right;
+    vertical-align: middle;
+}
+/* 팝업창 끝 */
